@@ -3,6 +3,24 @@ let tabla = document.getElementById('T1');
 
     document.getElementById('resultado').innerText = filas.length;
     
+let matriz = [["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+              ["-","-","-","-","-","-","-","-"],
+      ["-","-","-","-","-","-","-","-"]];
+console.log(matriz);
+
+function generateMine(){
+let contador = 0;
+for (i = 0; i < matriz.length ; i++){
+matriz[i][Math.random() * (7)] = "*" ;
+matriz[i][Math.random() * (7)] = "*" ;
+}
+}
+
 
 function Coordinates() {
   var mensaje;
